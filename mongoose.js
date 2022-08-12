@@ -1,5 +1,6 @@
 const mongoose = require("mongoose")
-const connection = mongoose.connect("mongodb+srv://shivam9006:shivam1234@cluster0.7mukwmn.mongodb.net/day9?retryWrites=true&w=majority")
+require("dotenv").config()
+const connection = mongoose.connect(`mongodb+srv://${process.env.KEY}:${process.env.VALUE}@cluster0.7mukwmn.mongodb.net/day9?retryWrites=true&w=majority`)
 
 const MovieSchema = new mongoose.Schema({
     

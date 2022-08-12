@@ -74,7 +74,7 @@ app.get("/movies/sort", async(req,res)=> {
     const data = await MovieModel.find().sort({[feild]:sortBy=="asc" ? 1 :"dsc" ? -1 :null})
     res.send(data)
 })
-
+// obj = 
 
 app.listen(8080,async()=> {
 try {
